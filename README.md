@@ -4,6 +4,8 @@ Publish a simple http service to echo the client-side ip
 
 i.e. Visit a url and return client side ip
 
+i.e. return X.X.X.X
+
 It is useful when your web service need to grep client side IP or simply want to check local machine ip because of connecting to other network and see is it worked.
 
 ### Usage
