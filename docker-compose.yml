@@ -6,13 +6,14 @@ services:
     restart: unless-stopped
     environment:
       - CERTBOT_EMAIL
+      - DOMAIN_NAME
     env_file:
-      - .env
+      - ./.env
     ports:
       - 80:80
       - 443:443
     volumes:
       - nginx_secrets:/etc/letsencrypt
-      - ./user_conf.d:/etc/nginx/user_conf.d
+      - ./nginx-templates:/etc/nginx/templates
 volumes:
   nginx_secrets:
