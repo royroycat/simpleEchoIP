@@ -28,3 +28,7 @@ docker-nginx-certbot docker image :
 https://github.com/JonasAlfredsson/docker-nginx-certbot
 
 Any more flexible config can ref to above docker image / git repo.
+
+For template of nginx conf, it can replace env variable to the template. The feature is by the following:
+
+https://github.com/docker-library/docs/tree/master/nginx#using-environment-variables-in-nginx-configuration-new-in-119
