@@ -4,9 +4,10 @@ services:
   nginx-certbox:
     image: jonasal/nginx-certbot:latest
     restart: unless-stopped
-    environment:
-      - CERTBOT_EMAIL
-      - DOMAIN_NAME
+    # if using env_file, then environment variable can omit
+    # environment:
+    #  - CERTBOT_EMAIL
+    #  - DOMAIN_NAME
     env_file:
       - ./.env
     ports:
